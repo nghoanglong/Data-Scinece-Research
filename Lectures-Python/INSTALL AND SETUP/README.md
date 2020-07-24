@@ -6,4 +6,4 @@ Có nhiều cách để cài đặt python nhưng mình khuyên mọi người n
 
 Sau khi cài đặt xong bạn sẽ thấy màn hình như này
 
-![appearance](https://user-images.githubusercontent.com/43443323/88374422-ef941e80-cdc3-11ea-8cf8-9e2778fcda2f.jpg)
+![demo1](https://user-images.githubusercontent.com/43443323/88375375-aba21900-cdc5-11ea-881b-dfa2102a52e5.JPG)
