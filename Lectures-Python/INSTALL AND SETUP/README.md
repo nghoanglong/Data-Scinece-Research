@@ -6,4 +6,4 @@ Có nhiều cách để cài đặt python nhưng mình khuyên mọi người n
 
 Sau khi cài đặt xong bạn sẽ thấy màn hình như này
 
-![Image](https://github.com/nghoanglong/Data-Science-Research/tree/master/Lectures-Python/INSTALL%20AND%20SETUP/demo.png)
+![appearance](https://user-images.githubusercontent.com/43443323/88374422-ef941e80-cdc3-11ea-8cf8-9e2778fcda2f.jpg)
