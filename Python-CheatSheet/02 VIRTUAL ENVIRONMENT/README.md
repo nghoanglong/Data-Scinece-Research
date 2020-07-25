@@ -71,11 +71,15 @@ $ conda update ten_packages
 ```
 
 ```
-# Tạo môi trường ảo
+# Tạo môi trường ảo default
 $ conda create --name ten_moitruong_ao
 
+# Tạo môi trường ảo kèm theo các packages
+$ conda create --name ten_moitruong_ao [package_1, package_2,...]  
+ex: $ conda create --name demoenv python=3.7 ipykernel numpy
+
 # Kích hoạt môi trường ảo
-$ conda activate
+$ conda activate ten_moitruong_ao
 
 # Tắt môi trường ảo
 $ conda deactivate
