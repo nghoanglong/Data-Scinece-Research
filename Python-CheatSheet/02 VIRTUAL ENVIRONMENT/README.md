@@ -1,8 +1,8 @@
 # Virtual Environment - Môi trường ảo
 
-Môi trường ảo hiểu nôm na nó sẽ cho phép bạn nghịch ngợm lung tung, hay test thử các packages, thư viện mới của Python mà không ảnh hưởng tới những packages đã được cài ở môi trường global. Nói chung nó giống như việc bạn tạo ra một tờ giấy trắng khác rồi vẽ phác thảo mẫu lên thay vì vẽ thẳng vào tờ giấy chính vậy á =)) 
+Môi trường ảo hiểu nôm na nó sẽ cho phép bạn nghịch ngợm lung tung, hay test thử các packages, thư viện mới của Python mà không ảnh hưởng tới những packages đã được cài ở môi trường global. Nói chung nó giống như việc mn sử dụng một tờ giấy nháp, rồi vẽ phác thảo mẫu lên thay vì vẽ thẳng vào tờ giấy chính. Dev Python trước khi bắt tay vào code một project lớn nào đó sẽ thường tạo VE thay vì thao tác hẳn trên môi trường chính, nhưng nếu mục đích chỉ là để học Python với những dòng code đơn giản thì khỏi cần set up VE làm gì cho mắc công =)) 
 
-Để coi những packages đã được cài ở môi trường global thì chỉ cần thao tác như sau (đảm bảo bạn đã cài anaconda ở bài 01): [**Bật cmd -> conda list**]. Nó ra một list dài các packages như vầy là đúng ròi á. Kể từ giờ mình sẽ gọi môi trường chính là **Global**, môi trường ảo là **Local** cho dễ nha
+Để coi những packages đã được cài ở môi trường global thì chỉ cần thao tác như sau (đảm bảo bạn đã cài anaconda ở Lec 01): [**Bật cmd -> conda list**]. Nó ra một list dài các packages như vầy là đúng ròi á. Kể từ giờ mình sẽ gọi môi trường chính là **Global**, môi trường ảo là **Local** cho dễ nha.
 
 ![image](https://user-images.githubusercontent.com/43443323/88449554-06914a00-ce72-11ea-992c-f3abc7dd4416.png)
 
@@ -62,6 +62,9 @@ $ conda info --envs
 
 # Show ra tất cả những packages hiện có trong môi trường
 $ conda list
+
+# Kiểm tra xem package nào đó đã được cài hay chưa
+$ conda list ten_package_kiemtra
 
 # Install packages mới vào conda ví dụ như numpy, pandas,...
 $ conda install ten_packages
