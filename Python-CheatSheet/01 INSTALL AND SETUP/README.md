@@ -1,6 +1,12 @@
 # Install Python and Anaconda
 
-Có nhiều cách để cài đặt python nhưng mình khuyên mọi người nên sử dụng anaconda để cài đặt python cũng như các packages sau này, mọi thứ trong hướng dẫn dành cho người sử dụng Windows :v
+Có nhiều cách để cài đặt python nhưng mình khuyên mọi người nên sử dụng Anaconda để cài đặt Python cũng như các Packages sau này, mọi thứ trong hướng dẫn dành cho người sử dụng Windows. 
+
+Anaconda nó giống như một trình quản lý, nó quản lý việc install Python cũng như các công cụ để code Python. Với Anaconda thì mn ko cần tự tay phải cài Python rồi cài những phần mềm để viết code khác nữa, tất cả đã có sẵn khi mn cài Anaconda rồi nha.
+
+Packages là những gói mã nguồn mở, đại khái sẽ có những developer khác viết sẵn những hàm tính toán và xử lý như hàm sắp xếp nè, hàm nối chuỗi nè, rồi họ đóng gói lại thành một thứ gọi là package, với Anaconda, ta chỉ cần download những package mong muốn đó về mà xài thôi.
+
+Trong lập trình có một quy tắc đó là những thứ có sẵn thì ta nên tận dụng, thay vì phải tự code, tốn thời gian có khi còn sai lè ra nữa. Sự ra đời của những packages hay thư viện có sẵn chính là nhằm mục đích cao cả này =))
 
 [Link cài đặt Anaconda](https://anaconda.org/)
 ___
