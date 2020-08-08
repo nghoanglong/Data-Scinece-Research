@@ -63,6 +63,9 @@ $ conda info --envs
 # Show ra tất cả những packages hiện có trong môi trường
 $ conda list
 
+# Kiểm tra xem package nào đó đã được cài hay chưa
+$ conda list ten_package_kiemtra
+
 # Install packages mới vào conda ví dụ như numpy, pandas,...
 $ conda install ten_packages
 
