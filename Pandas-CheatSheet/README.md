@@ -4,7 +4,7 @@ Trong quá trình học và sử dụng, mình có note lại một số phần 
 
 Trong quá trình viết note, phần Define and Set Up mình có đọc file từ một đường dẫn, thì đường dẫn đó là chỗ mình lưu file chứ không có gì đặc biệt. Vì file quá nặng nên GitHub không hỗ trợ cơ chế upload nên mình đã ignore đi, nhưng mình sẽ nén nó vào link Google Drive để mn có thể download về thực hành
 
-Nếu có bất kì câu hỏi nào, feel free to contact.
+Trong trường hợp mn truy cập vào link trên mà không được, là do vấn đề render file jupyter notebook của GitHub, cách giải quyết là mn copy link notebook đó, rồi paste vào trang này thì sẽ xem được như bình thường [Link](https://nbviewer.jupyter.org/). Nếu có bất kì thắc mắc nào, feel free to contact.
 
 **Link**: <https://drive.google.com/drive/folders/1BxPb7p25D3QHcQXZT9iWYELajIKO2Odn?usp=sharing>
 
