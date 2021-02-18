@@ -5,6 +5,5 @@ Thoải mái nhắn tin cho mình, nếu mn gặp bất kì thắc mắc nào nh
 ### Contact
 
 Author: Ng Hoang Long  
-LinkedIn: <https://www.linkedin.com/in/nghoanglong/>  
 Email: <nghoanglong.17december@gmail.com>  
 Facebook: <https://www.facebook.com/nghoanglong.17dec>
