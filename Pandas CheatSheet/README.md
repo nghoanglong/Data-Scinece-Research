@@ -6,7 +6,7 @@ Trong quá trình viết note, phần Define and Set Up mình có đọc file t�
 
 Mình cũng đã để link contact ở trang đầu repository này, nếu có bất kì thắc mắc nào, cứ thoải mái nhắn tin cho mình nha =))
 
-**Link**: <https://drive.google.com/drive/folders/1BxPb7p25D3QHcQXZT9iWYELajIKO2Odn?usp=sharing>
+**Link**: <https://drive.google.com/drive/folders/11HAi3wAv7-BhwIemc9U_0mzGPPZN9iOv?usp=sharing>
 
 ## Nguồn tham khảo
 - [Python Pandas Tutorial](https://youtu.be/ZyhVh-qRZPA) - Corey Schafer
