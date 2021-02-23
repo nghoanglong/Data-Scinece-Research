@@ -3,7 +3,7 @@ import collections
 import re
 
 def get_corpus(PATH_FILE):
-    """Lấy ra các sentence và format
+    """Lấy ra các sentence và format theo BPE
 
     Mọi sentence sẽ được format về dạng string('word word word </w>'), chuẩn bị
     cho BPE
@@ -37,7 +37,7 @@ def get_stats(corpus):
     return pairs
 
 def merge_vocab(pair, corpus):
-    """Gộp các cặp từ có tần suất xuất hiện lớn nhất
+    """Gộp cặp từ có tần suất xuất hiện lớn nhất
 
        pair: cặp từ có tần suất xuất hiện lớn nhất trong corpus
        corpus: chứa các sentence và frequency của sent đó
@@ -45,15 +45,15 @@ def merge_vocab(pair, corpus):
        return new_corpus sau khi đã merge cặp từ này trên tất cả các sentence của corpus
     """
     new_corpus = collections.defaultdict(int)
-    format_char = re.escape(''.join(pair)) 
-    pattern = re.compile(r"(?<\S)" + format_char + r"(?!\S)") # 2 kí tự đứng trước và sau format_char phải là khoảng trắng(space) -> _format-char_
+    format_char = re.escape(' '.join(pair)) 
+    pattern = re.compile(r"(?<!\S)" + format_char + r"(?!\S)") # 2 kí tự đứng trước và sau format_char phải là khoảng trắng(space) -> _format-char_
     for sent in corpus:
         new_sent = re.sub(pattern, ''.join(pair), sent)
         new_corpus[new_sent] = corpus[sent]
     return new_corpus
 
 def get_vocab(corpus):
-    """Build vocab gồm các token và token frequency từ corpus
+    """Get vocab gồm các token và token frequency từ corpus
 
        return defaultdict(1,
                           {'token': freq},
@@ -61,12 +61,12 @@ def get_vocab(corpus):
                           {'token': freq},
                           ....)
     """
-    tokens = collections.defaultdict(int)
+    vocab = collections.defaultdict(int)
     for word, freq in corpus.items():
-        word_tokens = word.split()
-        for token in word_tokens:
-            tokens[token] += freq
-    return tokens
+        word_char = word.split()
+        for unit in word_char:
+            vocab[unit] += freq
+    return vocab
 
 if __name__ == '__main__':
     corpus = get_corpus('path_file')
@@ -78,5 +78,9 @@ if __name__ == '__main__':
         best_pair_freq = max(pairs, key=pairs.get)
         corpus = merge_vocab(best_pair_freq, corpus)
         vocab = get_vocab(corpus)
-        print(f'vocabulary: {vocab}')
+        print(f'iter: {i}')
+        print(f'best pair = {best_pair_freq}')
+        print(f'number of vocab = {len(vocab)}')
+        print(f'list vocabularies = {vocab}')
+        print('===================================')
 
