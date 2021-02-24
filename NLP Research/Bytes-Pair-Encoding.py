@@ -5,7 +5,7 @@ import re
 def get_corpus(PATH_FILE):
     """Lấy ra các word và format theo BPE
 
-    Mọi word sẽ được format về dạng string('char char char </w>')
+    Mọi word sẽ được format về dạng word('char char char </w>')
     
     word <- 'char char char </w>'
     num <- số lần xuất hiện của word đó trong toàn corpus 
@@ -89,13 +89,44 @@ def decode_word(word_tokened):
     return word_decoded
 
 def encode_word(word, sorted_tokens, unk_token='<UNK>'):
-    """Encode word
+    """Encode word theo vocabulary
+
+    word: string chưa được token
+    sorted_tokens: tập vocabulary các token được sorted DESC
+    unk_token: unknown token
+
+    return word đã được token theo BPE
     """
-    pass
+    if word == '':
+        return []
+    if sorted_tokens == []:
+        return [unk_token]
+
+    word_tokened = []
+    for i in range(len(sorted_tokens)):
+        token = sorted_tokens[i]
+        token_reg = re.escape(token)
+        matched_positions = [(m.start(), m.end()) for m in re.finditer(token_reg, word)]
+        if len(matched_positions) == 0:
+            continue
+        subword_end_positions = [pos[0] for pos in matched_positions]
+        subword_start_position = 0
+        for subword_end_position in subword_end_positions:
+            subword_prev = word[subword_start_position:subword_end_position]
+            word_tokened += encode_word(subword_prev, sorted_tokens[i+1:])
+            word_tokened += [token]
+            subword_start_position = subword_end_position + len(token)
+        subword_remain = word[subword_start_position:]
+        word_tokened += encode_word(subword_remain, sorted_tokens[i+1:])
+        break
+    return word_tokened
 
 if __name__ == '__main__':
+    # đọc file -> lấy corpus
     corpus = get_corpus('path_file')
     num_merge = 1000
+
+    # xây dựng tập vocab gồm các token
     for i in range(num_merge):
         pairs = get_stats(corpus)
         if not pairs:
@@ -109,14 +140,17 @@ if __name__ == '__main__':
         print(f'list vocabularies = {vocab}')
         print('===================================')
 
+    # sort các token theo cả len token và frequency
     sorted_tokens_tuple = sorted(vocab.items(), 
                                 key=lambda item: (get_len_token(item[0]), item[1]),
-                                reverse=True) # sort các token theo cả len token và frequency
+                                reverse=True)
     li_tokens_sorted = [token for (token, freq) in sorted_tokens_tuple]
 
+    # demo tokenize word theo BPE
     demo_word = 'Ilikeeatingapples!</w>'
     if demo_word in known_word_tokenized:
         print(f'word tokenized = {demo_word}')
     else:
-        encode_word(demo_word, li_tokens_sorted)
+        word_encoded = encode_word(demo_word, li_tokens_sorted)
+        print(f'word tokenized = {word_encoded}')
 
