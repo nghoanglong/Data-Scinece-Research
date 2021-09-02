@@ -127,3 +127,8 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 
 **Notes:**
 + Hiểu lý thuyết K-means và cách implementation
+
+# References
++ [Sách Machine learning cơ bản](https://machinelearningcoban.com/)
++ [Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems 2nd](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291)
++ [Khanh personal-blog](https://khanh-personal.gitbook.io/ml-book-vn/)
