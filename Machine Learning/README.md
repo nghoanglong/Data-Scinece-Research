@@ -1,5 +1,5 @@
 # Machine Learning Learning Path
-Mọi kiến thức được mình học theo trình tự bên dưới ,đi từ những khái niệm  căn bản đến những phần nâng cao cần biết. Tùy kiến thức mỗi người hiện đang có mà có thể bắt đầu từ những chỗ khác nhau, ko nhất thiết phải đọc hết từ đầu.
+Mọi kiến thức được mình học theo trình tự bên dưới, từ những khái niệm căn bản đến những phần nâng cao cần thiết. Tùy kiến thức mỗi người hiện đang có mà có thể bắt đầu từ những chỗ khác nhau, ko nhất thiết phải đọc hết từ đầu.
 ## Nhiệm vụ của Machine Learning
 **Reading:**
 + Sách Machine Learning cơ bản - Chương 5, 5.1
@@ -32,9 +32,9 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 + Model cơ bản là gì?
 + Loss function và objective function là gì?
 + Parameter
- + Biết sơ sơ parameter là những tham số khi train mà model có thể tự học được, ví dụ như weigts  **W** = [O1, O2, O3,...], biết rõ hơn ở những mục tiếp theo 
+  + Biết sơ sơ parameter là những tham số khi train mà model có thể tự học được, ví dụ như weigts  **W** = [O1, O2, O3,...], biết rõ hơn ở những mục tiếp theo 
 + Hyper-parameter
- + Biết sơ sơ hyper-parameter là những tham số đã được gán cứng sẵn, nó ko được học qua quá trình train, ví dụ như learning rate,...
+  + Biết sơ sơ hyper-parameter là những tham số đã được gán cứng sẵn, nó ko được học qua quá trình train, ví dụ như learning rate,...
 + Hiểu được mô hình chung của các bài toán machine learning là đi tối ưu những hàm loss function bằng cách  đi tìm các tham số (parameter) tối ưu nhất
 
 ## Các vấn đề với dữ liệu trong Machine Learning 
