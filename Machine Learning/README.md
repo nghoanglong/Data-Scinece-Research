@@ -8,6 +8,20 @@ Mọi kiến thức được mình học theo trình tự bên dưới, từ nh�
 
 **Notes:** Hiểu được nhiệm vụ và vai trò của các thuật toán machine learning 
 
+## Các vấn đề với dữ liệu trong Machine Learning 
+**Reading:**
+
+Phần này vì tài liệu rất nhiều nên  bạn có thể tự research để có góc nhìn tổng quát. Một số tài liệu mình dùng như
++ Sách Machine Learning cơ bản - Chương 5, 5.2
++ Sách Hands-on ML - Part 1, Chap 1, Main challenges of ML, chỉ đọc 4 phần (insufficient, nonrepresentative, poor-quality, irrelevant)
+
+**Notes:**
+
++ Biết được các vấn đề với dữ liệu trong machine learning 
++ Biết lí do tại sao lại chia ra thành các tập dữ liệu train, dev or validation, test
++ Tác dụng của tập validation hay còn gọi là dev? (cần biết về overfit trước) 
++ Trong trường hợp bộ dữ liệu nhỏ, cần biết thêm kiến thức về cross-validation (cần biết về overfit và validation)
+
 ## Các bài toán trong Machine Learning
 **Reading:**
 + Sách Machine Learning cơ bản - Chương 5, 5.3
@@ -36,49 +50,6 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 + Hyper-parameter
   + Biết sơ sơ hyper-parameter là những tham số đã được gán cứng sẵn, nó ko được học qua quá trình train, ví dụ như learning rate,...
 + Hiểu được mô hình chung của các bài toán machine learning là đi tối ưu những hàm loss function bằng cách  đi tìm các tham số (parameter) tối ưu nhất
-
-## Các vấn đề với dữ liệu trong Machine Learning 
-**Reading:**
-
-Phần này vì tài liệu rất nhiều nên  bạn có thể tự research để có góc nhìn tổng quát. Một số tài liệu mình dùng như
-+ Sách Machine Learning cơ bản - Chương 5, 5.2
-+ Sách Hands-on ML - Part 1, Chap 1, Main challenges of ML, chỉ đọc 4 phần (insufficient, nonrepresentative, poor-quality, irrelevant)
-
-**Notes:**
-
-+ Biết được các vấn đề với dữ liệu trong machine learning 
-+ Biết lí do tại sao lại chia ra thành các tập dữ liệu train, dev or validation, test
-+ Tác dụng của tập validation hay còn gọi là dev? (cần biết về overfit trước) 
-+ Trong trường hợp bộ dữ liệu nhỏ, cần biết thêm kiến thức về cross-validation (cần biết về overfit và validation)
-
-## Overfit và Underfit trong ML
-**Reading:**
-
-Phần này vì tài liệu rất nhiều nên  bạn có thể tự research để có góc nhìn tổng quát. Một số tài liệu mình dùng như
-+ [Khanh personal-blog](https://khanh-personal.gitbook.io/ml-book-vn/chapter1/overfitting)
-+ [Machine Learning Adrew Nguyen](https://youtu.be/xjRbUX0i_e0?list=PLDpRz2wA0qZzTcDLeXP5PSCfmQ96l9-Qr)
-
-**Notes:**
-+ Biết được thế nào là overfit và underfit
-+ Regulization dùng để làm gì?
-+ Cơ chế khắc phục overfit và underfit
- + lựa chọn feature to keep, lựa chọn 1 model khác, sử dụng regulization 
- + cách chia tập dataset, sử dụng cross-validation, nhìn learning curve và early stop, xem lại dữ liệu 
-
-## Mối quan hệ giữa bias và variance
-**Reading:**
-
-+ [Bias và variance](https://forum.machinelearningcoban.com/t/moi-quan-he-danh-doi-giua-bias-va-variance/4173)
-
-**Notes:**
-+ Biết được các trường hợp sau:
- + High bias: High error in training set dẫn tới việc high error in dev and test set → mô hình ko quan tấm lắm về dữ liệu train, nên bị underfitting, model quá đơn giản
- + High variance: low error in training set but high error in dev and test set → mô hình cố mô tả lại chính xác dữ liệu train, cho nên ko có tính khái quát, dẫn đến overfitting
- + Low bias và high variance: overfit
- + High bias và low variance: underfit
-+ Biết được các trường hợp sau với regulization: 
- + Nếu regulization với hệ số lambda thấp, model sẽ bị overfit vì ko giảm được các weights
- + Nếu regulization với hệ số lambda cao, model sẽ bị underfit vì limit quá mức các weights
 
 ## Linear Regression
 **Reading:**
@@ -112,7 +83,48 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 **Notes:**
 + Hiểu được logistic regression, khái niệm cơ bản trong machine learning 
 
+## Overfit và Underfit trong ML
+**Reading:**
+
+Phần này vì tài liệu rất nhiều nên  bạn có thể tự research để có góc nhìn tổng quát. Một số tài liệu mình dùng như
++ [Khanh personal-blog](https://khanh-personal.gitbook.io/ml-book-vn/chapter1/overfitting)
++ [Machine Learning Adrew Nguyen](https://youtu.be/xjRbUX0i_e0?list=PLDpRz2wA0qZzTcDLeXP5PSCfmQ96l9-Qr) -> Xem video [26, 27, 28, 29]
+
+**Notes:**
++ Biết được thế nào là overfit và underfit
++ Regulization dùng để làm gì?
++ Cơ chế khắc phục overfit và underfit
+ + lựa chọn feature to keep, lựa chọn 1 model khác, sử dụng regulization 
+ + cách chia tập dataset, sử dụng cross-validation, nhìn learning curve và early stop, xem lại dữ liệu 
+
+## Mối quan hệ giữa bias và variance
+**Reading:**
+
++ [Bias và variance](https://forum.machinelearningcoban.com/t/moi-quan-he-danh-doi-giua-bias-va-variance/4173)
++ [Machine learning Andrew Nguyen](https://youtu.be/9XMeUBO4DY4?list=PLDpRz2wA0qZzTcDLeXP5PSCfmQ96l9-Qr) -> Xem video [48, 49]
+
+**Notes:**
++ Biết được các trường hợp sau:
+ + High bias: High error in training set dẫn tới việc high error in dev and test set → mô hình ko quan tấm lắm về dữ liệu train, nên bị underfitting, model quá đơn giản
+ + High variance: low error in training set but high error in dev and test set → mô hình cố mô tả lại chính xác dữ liệu train, cho nên ko có tính khái quát, dẫn đến overfitting
+ + Low bias và high variance: overfit
+ + High bias và low variance: underfit
++ Biết được các trường hợp sau với regulization: 
+ + Nếu regulization với hệ số lambda thấp, model sẽ bị overfit vì ko giảm được các weights
+ + Nếu regulization với hệ số lambda cao, model sẽ bị underfit vì limit quá mức các weights
+
+## Metrics for measurement
+**Reading:**
+
++ [Machine learning Andrew Nguyen](https://youtu.be/83y817CiBI4?list=PLDpRz2wA0qZzTcDLeXP5PSCfmQ96l9-Qr) -> Xem video [54, 55]
++ [Machine learning cơ bản](https://machinelearningcoban.com/2017/08/31/evaluation/)
++ [Precision, recall, F1-score là gì?](https://caihuuthuc.wordpress.com/2020/02/23/precision-recall-va-f1-score-la-gi/)
+
+**Notes:**
+Biết được các phép đánh giá mô hình phân loại (bài toán multi-classification)
+
 ## K-nearest Neighbors
+
 **Reading:**
 + [Machine learning cơ bản](https://machinelearningcoban.com/2017/01/08/knn/)
 + K-nearest Neighbors Implementation -> Folder K-nearest Neighbors
