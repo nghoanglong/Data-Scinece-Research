@@ -1,4 +1,4 @@
-# Machine Learning Learning Path
+# Machine Learning roadmap and resource
 Mọi kiến thức được mình học theo trình tự bên dưới, từ những khái niệm căn bản đến những phần nâng cao cần thiết. Tùy kiến thức mỗi người hiện đang có mà có thể bắt đầu từ những chỗ khác nhau, ko nhất thiết phải đọc hết từ đầu.
 ## Nhiệm vụ của Machine Learning
 **Reading:**
