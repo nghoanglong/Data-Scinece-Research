@@ -120,7 +120,9 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 + [Machine learning Andrew Nguyen](https://youtu.be/83y817CiBI4?list=PLDpRz2wA0qZzTcDLeXP5PSCfmQ96l9-Qr) -> Xem video [54, 55]
 + [Machine learning cơ bản](https://machinelearningcoban.com/2017/08/31/evaluation/)
 + [Precision, recall, F1-score là gì?](https://caihuuthuc.wordpress.com/2020/02/23/precision-recall-va-f1-score-la-gi/)
-+ [R-squared, Adj R-squared](https://www.phamlocblog.com/2019/10/y-nghia-r-binh-phuong-hieu-chinh.html)
++ [Ý nghĩa của R-squared, Adj R-squared](https://www.phamlocblog.com/2019/10/y-nghia-r-binh-phuong-hieu-chinh.html)
++ [Tính toán R-squared with Python from scratch, phần 1](https://www.codinground.com/calculating-r-squared-python/)
++ [Tính toán R-squared with Python from scratch, phần 2](https://pythonprogramming.net/how-to-program-r-squared-machine-learning-tutorial/)
 
 **Notes:**
 + Biết được các phép đánh giá mô hình phân loại (bài toán multi-classification)
