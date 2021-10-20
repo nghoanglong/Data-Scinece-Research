@@ -61,6 +61,7 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 **Notes:**
 + Hiểu được các khái niệm cơ bản ở trên như model, loss function, parameter, hyper-parameter 
 + Xác định linear regression ở đây là đang implementation dựa trên các phép biến đổi phức tạp, sau khi được học kiến thức về gradient descent ta sẽ có cách giải mới mà không cần biến đổi tính toán mà hoàn toàn  dựa vào đạo hàm
++ Biết được loss function của các bài toán LR (MSE, RMSE)
 
 ## Gradient Descent
 **Reading:**
@@ -119,9 +120,11 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 + [Machine learning Andrew Nguyen](https://youtu.be/83y817CiBI4?list=PLDpRz2wA0qZzTcDLeXP5PSCfmQ96l9-Qr) -> Xem video [54, 55]
 + [Machine learning cơ bản](https://machinelearningcoban.com/2017/08/31/evaluation/)
 + [Precision, recall, F1-score là gì?](https://caihuuthuc.wordpress.com/2020/02/23/precision-recall-va-f1-score-la-gi/)
++ [R-squared, Adj R-squared](https://www.phamlocblog.com/2019/10/y-nghia-r-binh-phuong-hieu-chinh.html)
 
 **Notes:**
-Biết được các phép đánh giá mô hình phân loại (bài toán multi-classification)
++ Biết được các phép đánh giá mô hình phân loại (bài toán multi-classification)
++ Biết được các phép đánh giá mô hình LR (R-squared, Adj R-squared)
 
 ## K-nearest Neighbors
 
