@@ -121,6 +121,7 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 + [Machine learning cơ bản](https://machinelearningcoban.com/2017/08/31/evaluation/)
 + [Precision, recall, F1-score là gì?](https://caihuuthuc.wordpress.com/2020/02/23/precision-recall-va-f1-score-la-gi/)
 + [Ý nghĩa của R-squared, Adj R-squared](https://www.phamlocblog.com/2019/10/y-nghia-r-binh-phuong-hieu-chinh.html)
++ [Ý nghĩa của R-squared, Adj R-squared - Part 2](https://phantichspss.com/r-binh-phuong-r-binh-phuong-hieu-chinh-cong-thuc-y-nghia-cach-tinh-thu-cong-va-cach-tinh-bang-spss.html)
 + [Tính toán R-squared with Python from scratch, phần 1](https://www.codinground.com/calculating-r-squared-python/)
 + [Tính toán R-squared with Python from scratch, phần 2](https://pythonprogramming.net/how-to-program-r-squared-machine-learning-tutorial/)
 
