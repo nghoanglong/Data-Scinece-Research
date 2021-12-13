@@ -79,6 +79,7 @@ Phần này vì tài liệu rất nhiều nên  bạn có thể tự research đ
 **Reading:**
 
 + [Machine learning cơ bản](https://machinelearningcoban.com/2017/01/27/logisticregression/)
++ [Machine learning in 2 Months](https://github.com/bangoc123/learn-machine-learning-in-two-months/tree/master/models/logistic-regression)
 + Logistic Regression - Binary Classification Implementation -> Folder Logistic Regression
 
 **Notes:**
