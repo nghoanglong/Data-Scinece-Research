@@ -1,4 +1,4 @@
-# Machine-Learning-and-Deep-Learning-Notes
+# MachineLearning-and-DeepLearning-Notes
 ## Giới thiệu
 Trong quá trình học và sử dụng, mình có note lại một số phần cơ bản và nâng cao về Machine Learning and Deep Learning, một trong những thứ giúp con người tiến xa hơn với lượng dữ liệu khổng lồ hiện nay
 
